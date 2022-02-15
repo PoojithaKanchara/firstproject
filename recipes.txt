@@ -3,3 +3,7 @@ welcome to the kitchen
 curry 
 dal
 brinjal
+
+
+non veg
+chicken
