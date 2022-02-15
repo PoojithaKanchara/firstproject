@@ -9,6 +9,9 @@ non veg
 chicken
 
 pasta
-pizza
+
 
 Thankyou
+
+end
+
