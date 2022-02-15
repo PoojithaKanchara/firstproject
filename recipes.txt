@@ -8,4 +8,7 @@ brinjal
 non veg
 chicken
 
+pasta
+pizza
+
 Thankyou
