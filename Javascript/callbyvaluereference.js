@@ -33,5 +33,5 @@ let emp={
 
 modify(emp)
 
-console.log(emp) // name changes
+console.log(emp) // name change
 
