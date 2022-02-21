@@ -1,4 +1,5 @@
 //What is require?
+//fs : file system module
 
 const fs = require('fs');
 
