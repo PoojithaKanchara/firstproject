@@ -8,7 +8,7 @@ const fs = require('fs');
 
  function read(){
     return new Promise((resolve, reject)=>{
-        fs.readFile('./Javascript/hello.txt',(err, data)=>{
+        fs.readFile('./hello1.txt',(err, data)=>{
             if(err){
                 reject('File not found');
             }else{
@@ -23,12 +23,21 @@ const fs = require('fs');
 
 
 async function func(){
-    let x = await read();
-    console.log(x)
-    console.log("Reading file");
+    try{
+        let x = await read();
+        console.log("Reading file");
+    }catch(err){
+        console.log(err);
+    }
+
 }
 
-func();
+try{
+    func();
+}catch(err){
+    console.log("main ccatchh..")
+}
+
 
 //x.then((data)=> console.log(data)).catch(err=>console.log(err));
 
