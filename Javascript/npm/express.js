@@ -27,3 +27,30 @@ app.get('/fuck2', function (req, res) {
     res.send('Hello fuck2 '+ data)
   })
 app.listen(3000, ()=>console.log('listening @3000'))
+
+const { Client } = require('pg')
+
+async function dbConnect(){
+  const client = new Client({
+    user: 'postgres',
+    host: 'localhost',
+    database: 'postgres',
+    password: 'abcd1234',
+    port: 5432,
+  })
+  await client.connect()
+  const res = await client.query('SELECT * FROM FUCK')
+  // INSERT
+  //UPDATRE
+  //DELETE
+  console.log(res.rows) // Hello world!
+  await client.end()
+}
+
+async function dbConMain(){
+ await dbConnect();
+ console.log('Connected DB')
+}
+
+
+dbConMain();
