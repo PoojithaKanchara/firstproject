@@ -52,7 +52,6 @@ let obj={
 let obj1={
     fname:'you fuck ',
     lname:'me',
-
 }
 
 
